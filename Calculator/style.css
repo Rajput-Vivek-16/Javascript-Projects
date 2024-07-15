@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.calculator{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#userInput{
+    display: block;
+    width: 36%;
+    height: 50px;
+    align-self: center;
+    text-align: right;
+    padding: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 520;
+    margin-bottom: 1.2rem;
+    background: #f4f4f4;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#userInput:focus{
+    box-shadow: 0 0 10px 0.5px rgb(240, 148, 0);
+    border:1px solid rgb(240, 148, 0) ;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    font-size: bolder;
+}
+
+.buttons{
+    width: 36%;
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    justify-content: center;
+    gap: 1rem;
+    padding: 25px;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    background: linear-gradient(135deg,#ff9900, #51f7c4);
+    border-radius: 16px;
+}
+
+p{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    background: linear-gradient(180deg, #FF9933 58%, #FF9933 30%, #FFFFFF 60%, #FFFFFF 60%, #138808 70%, #138808 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));    
+}
+
+button{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    height: 3rem;
+}
+
+
+@media screen and (max-width:426px) {
+    p{
+        font-size:1.8rem;
+        margin-bottom: 2.2rem;
+    }
+    #userInput{
+        width:92%;
+        font-size: 1.1rem;
+        height: 32px;
+    }
+    .buttons{
+        width: 92%;
+        grid-template-columns: repeat(4, 46px);
+        gap: 1.2rem;
+        border-radius: 1.2rem;
+    } 
+}
+
+@media screen and (min-width:426px) and (max-width:768px) {
+    p{
+        font-size:1.8rem;
+        margin-bottom: 2.5rem;
+    }
+    #userInput{
+        width:75%;
+        font-size: 1.2rem;
+        height: 40px;
+    }
+    .buttons{
+        width: 75%;
+        grid-template-columns: repeat(4, 54px);
+        gap: 1.6rem;
+        border-radius: 1.2rem;
+    } 
+}
+
+@media screen and (min-width: 768px)and (max-width:990px) {
+    p{
+        font-size:3.2rem;
+        margin-bottom: 2.5rem;
+    }
+    #userInput{
+        width:68%;
+        font-size: 1.2rem;
+    }
+    .buttons{
+        width: 68%;
+        grid-template-columns: repeat(4, 88px);
+        gap: 1.6rem;
+        border-radius: 1.2rem;
+    } 
+}
+
+@media screen and (min-width: 1440px) {
+    p{
+            font-size:4.6rem;
+            margin-bottom: 4rem;
+        }
+        #userInput{
+            width:60%;
+            font-size: 1.2rem;
+        }
+        .buttons{
+            width:60%;
+            grid-template-columns: repeat(4,140px);
+            gap: 2rem;
+            border-radius: 2rem;
+        }
+    }
