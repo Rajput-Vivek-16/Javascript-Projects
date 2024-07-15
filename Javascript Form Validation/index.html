@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="form_favicon.png" type="image/x-icon">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <!-- Header Section -->
+        <header>
+            <h3 class="intro-title">Welcome to the JavaScript Validation Form</h3>
+        </header>
+        
+        <!-- Form Container -->
+        <div class="form-container">
+            <!-- Signup Form -->
+            <form action="success.html" onsubmit="return validateForm()" name="signup-form" method="get">
+                <!-- Avatar Image -->
+                <img src="avatar.svg" alt="avatar" class="avatar">
+                
+                <!-- Name Input Field -->
+                <div class="name">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="username" id="name" placeholder="Enter your name" autocapitalize="on" autocomplete="off" required>
+                    <span id="name-error" class="form-error"></span>
+                </div>
+
+                <!-- Email Input Field -->
+                <div class="email">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your Email" autocomplete="off" required>
+                    <span id="email-error" class="form-error"></span>
+                </div>
+
+                <!-- Phone Number Input Field -->
+                <div class="phone-number">
+                    <label for="num" id="number-label">Phone Number</label>
+                    <input type="tel" name="phoneNumber" id="num" placeholder="Enter your Number" autocomplete="off" required>
+                    <span id="phoneNumber-error" class="form-error"></span>
+                </div>
+
+                <!-- Password Input Field with Toggle Visibility Option -->
+                <div class="password">
+                    <label for="password" id="password-label">
+                        <span class="password-name">Password</span>
+                        <input type="checkbox" onclick="togglePasswordVisibility('password')" id="checkbox">
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="off" required>
+                    <span id="password-error" class="form-error"></span>
+                </div>
+
+                <!-- Confirm Password Input Field -->
+                <div class="confirm-password">
+                    <label for="confirmPassword" id="confirm-password-label">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your Password" autocomplete="off" required>
+                    <span id="confirmPassword-error" class="form-error"></span>
+                </div>
+
+                <!-- Form Buttons: Reset and Submit -->
+                <div class="buttons">
+                    <input type="reset" value="Reset" class="btn-sm btn-outline-danger">
+                    <input type="submit" value="Submit" class="btn btn-outline-success">
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- External JavaScript File -->
+<script src="index.js"></script>
+
+</body>
+</html>
