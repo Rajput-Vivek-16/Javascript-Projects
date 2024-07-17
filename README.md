@@ -2,6 +2,8 @@
 This repository contains projects utilizing HTML, CSS, and JavaScript. Some projects also incorporate the Bootstrap CSS framework.
 
 ## Projects
+
+- [StudySync Using HTML and CSS](https://studysync-20.netlify.app/)
 - [Basic Digital Calculator](https://basics-digital-calculator.netlify.app/)
 - [Javascript Form Validation](https://javascript-form-validation-16.netlify.app/)
 - [Top 50 Global developer - API](https://top50-global-developer.netlify.app/)
