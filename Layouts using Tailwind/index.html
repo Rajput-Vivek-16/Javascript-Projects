@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test</title>
+</head>
+
+
+<body>
+    <!--------------------------------------------------- Layouts -------------------------------------------------->
+    <!-- Mobile Layout -->
+    <div class="md:hidden block">
+        <h1 class="text-center mt-2">Mobile</h1>
+        <div class="layout m-4 grid gap-2 h-screen">
+            <header class="bg-orange-400 text-center text-white rounded p-1.5 h-16">Header</header>
+            <nav class="bg-red-500 text-center text-white rounded p-1.5 h-12">Menu</nav>
+            <main class="bg-blue-500 text-center text-white rounded p-1.5 h-32">Hero</main>
+            <main class="bg-gray-600 text-center text-white rounded p-1.5 h-48">Main</main>
+            <section class="bg-yellow-500 text-center text-white rounded p-1.5 h-24">Banner</section>
+            <aside class="bg-green-500 text-center text-white rounded p-1.5 h-20">Extra</aside>
+            <figure class="bg-teal-300 text-center text-white rounded p-1.5 h-28">Image</figure>
+        </div>
+    </div>
+
+    <!-- Tablet Layout -->
+    <div class="md:block hidden lg:hidden">
+        <h1 class=" text-center mt-2">Tablet</h1>
+        <div class="layout m-4 grid gap-2 h-screen">
+            <header class="bg-orange-400 text-center text-white rounded p-2.5 ">Header</header>
+            <main class="bg-blue-500 text-center text-white rounded p-2.5 row-span-2">Hero</main>
+            <div class="grid grid-cols-12 gap-2">
+                <nav class="bg-red-500 text-center text-white rounded p-2.5 col-span-1">Menu</nav>
+                <div class="grid gap-2 col-span-11">
+                    <main class="bg-gray-600 text-center text-white rounded p-2.5 row-span-6">Main</main>
+                    <section class="bg-yellow-500 text-center text-white rounded p-2.5 row-span-2">Banner</section>
+                    <div class="grid gap-2 grid-cols-12">
+                        <aside class="bg-green-500 text-center text-white rounded p-2.5 col-span-8">Extra</aside>
+                        <figure class="bg-teal-300 text-center text-white rounded p-2.5 col-span-4 ">Image </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Layout -->
+    <div class="lg:block hidden">
+        <h1 class="text-center mt-2">Desktop</h1>
+        <div class="layout m-4 grid gap-2 h-screen">
+            <div class="grid grid-cols-12 gap-2">
+                <header class="bg-orange-400 text-center text-white rounded p-2.5 col-span-4">Header</header>
+                <nav class="bg-red-500 text-center text-white rounded p-2.5 col-span-8">Menu</nav>
+            </div>
+            <main class="bg-blue-500 text-center text-white rounded p-2.5 ">Hero</main>
+            <div class="grid gap-2 grid-cols-12">
+                <main class="bg-gray-600 text-center text-white rounded p-2.5 col-span-8">Main</main>
+                <div class="grid gap-2 col-span-4">
+                    <section class="bg-yellow-500 text-center text-white rounded p-2.5 ">Banner</section>
+                    <aside class="bg-green-500 text-center text-white rounded p-2.5 ">Extra</aside>
+                </div>
+            </div>
+            <figure class="bg-teal-300 text-center text-white rounded p-2.5 ">Image</figure>
+        </div>
+    </div>
+
+</body>
+
+</html>
