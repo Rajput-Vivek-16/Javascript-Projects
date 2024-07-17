@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color:#000;
+    font-weight: 700;
+    text-align: center;
+}
+body{
+    display: flex;
+    height: 100vh;  
+    justify-content: center;
+    align-items: center;
+}
+p{line-height: 1.6;}
+li{
+    list-style: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(145, 15, 15, 0.701);
+}
+
+.live-filter{
+    width: 22rem;
+    box-shadow: 1rem 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    margin: 3rem 0;
+    background-color: #fff;
+}
+
+.search{
+    width: 100%;
+    background-color: #432c7a;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 3rem 0;
+}
+.search p{
+    margin: 0.1rem;
+    color:#fff;
+    background-color: #432c7a;
+}
+.search p:first-child{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.search p:last-of-type{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+}
+#search{
+    outline: 2px 2px 2px 2px;
+}
+.search input{
+    width: 50%;
+    border:none;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+    border-radius: 0.2rem;
+}
+::placeholder{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.user-info{
+    padding: 1.2rem;
+    height: 20rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow-y: auto;
+    background-color: bisque;
+}
+.user-list{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.user-data{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;  
+    padding: 0.3rem 0rem;
+    
+    gap: 0.3rem;
+    border-radius: 5rem;
+}
+.user-data img{
+    max-width: 100%;
+    width: 3.5rem;
+    height: auto;
+    border-radius: 50%;
+}
+.user-data div{
+    padding-top: 0.5rem ;
+    font-size: 0.88rem;
+    text-align: center;
+}
+.user-data p{
+    text-align: left;
+    text-transform: capitalize;
+}
+.user-data a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.701);
+}
+.hide{
+    display: none;
+}
